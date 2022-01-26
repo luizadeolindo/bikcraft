@@ -1,85 +1,44 @@
-body {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-.header-bg {
-    background-color: #000000;
-}
+@import "./global/header.css";
+@import "./global/footer.css";
 
-ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-a {
-    text-decoration: none;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin-left: auto;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-right: auto;
-}
 
-.header-menu {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+/* Utilidades */
+@import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
-.header-menu a {
-    padding: 16px 0;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 18px;
-    position: relative;
-}
+/* Home */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
-.header-menu a:after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0px;
-    margin-top: 4px;
-    background-color: #ffffff;
-    position: absolute;
-    transition: 0.3s;
-}
+/* Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
+@import "./bicicletas/bicicletas.css";
 
-.header-menu a:hover:after{
-    width: 100%;
-}
+/* Bicicleta */
+@import "./bicicleta/bicicleta.css";
+@import "./bicicleta/seguro.css";
 
-@media (max-width: 800px) {
-    .header-menu {
-        gap: 20px;
-    }
-    .header-menu a {
-        background-color: #111111;
-        padding: 12px 16px;
-        border-radius: 4px;
-    }
-    .header-menu a:hover{
-        background-color: #2e2e2e;
-    }
-    .header-menu a:after {
-        display: none;
-    }
-}
+/* Seguros */
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
 
-@media (max-width: 600px) {
-    .header-menu {
-        gap: 12px;
-    }
-    .header-menu a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-}
+/* Contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+/* Orçamento */
+@import "./orcamento/orcamento.css";
+
+
+/* Termos */
+@import "./termos/termos.css";
+
+
+
